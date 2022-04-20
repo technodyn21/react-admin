@@ -1,0 +1,158 @@
+[
+    {
+        "pages": {
+            "login": {
+                "main": {
+                    "HTMLTitle": "MyCharts ERP",
+                    "beforeLogo": "",
+                    "logo": "logo.svg",
+                    "pageTitle": "MyCharts ERP",
+                    "afterTitle": ""
+                },
+                "menu": {
+                    "tabs": {
+                        "Login": {
+                            "LoginPageTemplate": [
+                                {
+                                    "greeting": "Good Morning, User (T)"
+                                },
+                                {
+                                    "googleButton": {
+                                        "size": "large",
+                                        "className": "googleButton",
+                                        "imgSource": "google.svg",
+                                        "imgAlt": "Google",
+                                        "imgClassName": "googleIcon",
+                                        "imgText": "Sign in with Google"
+                                    }
+                                },
+                                {
+                                    "dividerContainer": "or"
+                                },
+                                {
+                                    "inputField": {
+                                        "id": "email",
+                                        "ref": "user",
+                                        "placeholder": "Email Adress",
+                                        "type": "email",
+                                        "fullWidth": true
+                                    }
+                                },
+                                {
+                                    "inputField": {
+                                        "id": "password",
+                                        "ref": "password",
+                                        "placeholder": "Password",
+                                        "type": "password",
+                                        "fullWidth": true
+                                    }
+                                },
+                                {
+                                    "formButtons": [
+                                        {
+                                            "submitButton": {
+                                                "loginLoader": true,
+                                                "id": "login",
+                                                "onSubmit": [
+                                                    "user",
+                                                    "password"
+                                                ],
+                                                "variant": "contained",
+                                                "color": "primary",
+                                                "size": "large",
+                                                "imgText": "Login"
+                                            }
+                                        },
+                                        {
+                                            "submitButton": {
+                                                "loginLoader": false,
+                                                "id": "fPassword",
+                                                "color": "primary",
+                                                "size": "large",
+                                                "className": "forgetButton",
+                                                "imgText": "Forgot Password"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "User": {
+                            "LoginPageTemplate": [
+                                {
+                                    "greeting": "Welcome!"
+                                },
+                                {
+                                    "subGreeting": "Create your account"
+                                },
+                                {
+                                    "inputField": {
+                                        "id": "name2",
+                                        "ref": "name2",
+                                        "placeholder": "Full Name",
+                                        "type": "text",
+                                        "fullWidth": true
+                                    }
+                                },
+                                {
+                                    "inputField": {
+                                        "id": "user2",
+                                        "ref": "user2",
+                                        "placeholder": "admin@techno-dyn.com",
+                                        "type": "email",
+                                        "fullWidth": true
+                                    }
+                                },
+                                {
+                                    "inputField": {
+                                        "id": "password2",
+                                        "ref": "password2",
+                                        "placeholder": "Password",
+                                        "type": "password",
+                                        "fullWidth": true
+                                    }
+                                },
+                                {
+                                    "formButtons": [
+                                        {
+                                            "submitButton": {
+                                                "loginLoader": false,
+                                                "id": "createAcc",
+                                                "onSubmit": [
+                                                    "user2",
+                                                    "password2",
+                                                    "name2"
+                                                ],
+                                                "variant": "contained",
+                                                "color": "primary",
+                                                "size": "large",
+                                                "imgText": "Create your account",
+                                                "className": "createAccountButton",
+                                                "fullWidth": true
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                "defaultValues": {
+                    "main": {
+                        "defaultLogoLink": "../images/defLogo.svg",
+                        "defaultHTMLTitle": "ERP Admin",
+                        "defaultPageTitle": "ERP Admin",
+                        "defaultBeforeLogo": "",
+                        "defaultAfterTitle": ""
+                    },
+                    "menu": {
+                        "tabs": {
+                            "Login": {},
+                            "User": {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+]
